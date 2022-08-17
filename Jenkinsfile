@@ -7,12 +7,12 @@ pipeline {
     }
 
 
-     environment {
+     environment {    //2nd Execution
         AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
 
-   agent  any
+   agent  any    //1st execution
         options {
                 timestamps ()
                 ansiColor('xterm')
